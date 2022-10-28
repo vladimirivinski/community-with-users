@@ -1,0 +1,11 @@
+.THIS .btn-border{
+    border-color: red;
+}
+.THIS .btn-border:hover{
+    background-color: red;
+    color: white;
+}
+.THIS .slds-card__header{
+    background-color: rgb(222, 222, 222);
+    height: 80px;
+}
