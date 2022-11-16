@@ -1,5 +1,5 @@
 <aura:component >
-	<aura:attribute name="title"  type="string" description="Title of the popup"  />
+	<aura:attribute name="title"  type="string" default="Full information" description="Title of the popup"  />
 	<aura:attribute name="cancelLabel"  type="string" default="" description="Label for cancel button"  />
 	<aura:attribute name="confirmLabel"  type="string" default="Okay" description="Label for OK button"  />
 	<aura:attribute name="isHidden" type="Boolean" default="true" description="Flag used to toggle popup"  />
@@ -13,7 +13,7 @@
 			class="{!v.isHidden ? 'slds-modal slds-modal__close slds-fade-in-close' : 'slds-modal slds-modal__open slds-fade-in-open'}">
 	        <div class="slds-modal__container">
 	            <div class="slds-modal__header">
-	           		<h2 class="slds-text-heading--medium">
+	           		<h2 class="slds-text-heading_medium">
 	           			{!v.title}
 	           		</h2>
 	                <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.defaultCloseAction}">
@@ -22,7 +22,7 @@
 	                </button>
 	            </div>
 
-				<div class="slds-modal__content slds-p-around--medium">
+				<div class="slds-modal__content slds-var-p-around_medium">
 					 <div>
 					 	{!v.body}
 					 </div>

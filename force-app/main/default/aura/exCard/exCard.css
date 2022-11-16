@@ -1,11 +1,15 @@
-.THIS .btn-border{
-    border-color: red;
+.THIS .btn-border-red:hover {
+	background-color: red;
+	color: rgb(255, 255, 255);
 }
-.THIS .btn-border:hover{
-    background-color: red;
-    color: white;
+.THIS .btn-border-green {
+	color: green;
 }
-.THIS .slds-card__header{
-    background-color: rgb(222, 222, 222);
-    height: 80px;
+.THIS .btn-border-green:hover {
+	background-color: green;
+	color: rgb(255, 255, 255);
+}
+.THIS .slds-card__header {
+	background-color: rgb(222, 222, 222);
+	height: 3.5rem;
 }

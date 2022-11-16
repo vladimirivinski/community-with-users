@@ -1,7 +1,7 @@
 public with sharing class EX_CardController {
     @AuraEnabled
     public static List<AccountListWrapper> getAccounts(){
-        List<Account> accounts = [SELECT Id, Name, Start__c, Description__c, Status__c, Number__c FROM Account WHERE Name Like 'Test%' LIMIT 4];
+        List<Account> accounts = [SELECT Id, Name, Start__c, Description__c, Status__c, Number__c FROM Account LIMIT 4];
         List<AccountListWrapper> wrappedAccounts = new List<AccountListWrapper>();
         if(!accounts.isEmpty()){
             for(Account acc : accounts){

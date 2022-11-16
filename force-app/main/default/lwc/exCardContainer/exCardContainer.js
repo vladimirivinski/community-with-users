@@ -6,5 +6,6 @@ export default class ExCardContainer extends LightningElement {
 
     async connectedCallback(){
         this.accounts = await getAccounts();
+        console.log(this.accounts);
     }
 }
